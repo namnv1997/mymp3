@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/bgr" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/tap_song"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black_gr"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/icon_song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_music_note_white_36dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/icon_song"
+                    android:text="Bài hát trên máy"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_number_song_storage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/icon_song"
+                    android:layout_toRightOf="@id/icon_song"
+                    android:text="0 bài hát"
+                    android:textColor="#E0E0E0" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/tap_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black_gr"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/icon_favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_favorite_border_white_36dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/icon_favorite"
+                    android:text="Ưa thích    "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_number_song_favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/icon_favorite"
+                    android:layout_toRightOf="@+id/icon_favorite"
+                    android:text="0 bài hát"
+                    android:textColor="#E0E0E0" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/tap_list"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black_gr"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/icon_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_playlist_play_white_36dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/icon_list"
+                    android:text="Danh sách       "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_number_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/icon_list"
+                    android:layout_toRightOf="@+id/icon_list"
+                    android:text="0 danh sách"
+                    android:textColor="#E0E0E0" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/tap_ago"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/black_gr"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/icon_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_access_time_white_36dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/tv_number_song_ago"
+                    android:layout_alignRight="@+id/tv_number_song_ago"
+                    android:layout_toRightOf="@id/icon_timer"
+                    android:text="Gần đây "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_number_song_ago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/icon_timer"
+                    android:layout_toRightOf="@+id/icon_timer"
+                    android:text="1 bài hát"
+                    android:textColor="#E0E0E0" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
